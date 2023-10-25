@@ -1,0 +1,33 @@
+.dsc-0848-2-2-icon1 {
+  position: relative;
+  border-radius: 37.32px;
+  width: 26px;
+  height: 26px;
+  object-fit: cover;
+}
+.siddharth-jain1 {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 28px;
+}
+.drop-down-icon1 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.profile1 {
+  border-radius: 5px;
+  border: 1px solid #ebf0f5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  gap: 10px;
+  text-align: left;
+  font-size: 16px;
+  color: #333;
+  font-family: "DM Sans";
+}

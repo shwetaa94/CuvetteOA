@@ -1,0 +1,48 @@
+.b7,
+.tables-css1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: -0.02em;
+}
+.b7 {
+  top: 26px;
+  left: 293px;
+  line-height: 28px;
+  color: #fb5e5e;
+}
+.group-child9 {
+  top: 0;
+  border-radius: 100px;
+  background-color: #fb5e5e;
+  width: 197px;
+  opacity: 0.1;
+}
+.group-child10,
+.group-child9,
+.rectangle-group {
+  position: absolute;
+  left: 0;
+  height: 10px;
+}
+.group-child10 {
+  top: 0;
+  border-radius: 100px;
+  background-color: #fb5e5e;
+  width: 38px;
+}
+.rectangle-group {
+  top: 35px;
+  width: 197px;
+}
+.tables-css-basics-group {
+  position: absolute;
+  top: 420px;
+  left: 1044px;
+  width: 326px;
+  height: 54px;
+  text-align: left;
+  font-size: 16px;
+  color: #566474;
+  font-family: "DM Sans";
+}

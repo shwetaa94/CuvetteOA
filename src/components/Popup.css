@@ -1,0 +1,133 @@
+
+.main {
+    background-color: #fff !important;
+    padding: 2rem 3rem;
+    border: 1px solid #142683; /* Replaced blue with #142683 */
+    border-radius: 5px;
+    width: 880px;
+    height: 521px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Upper part styles */
+  .upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    height:25%;
+    width:100%;
+    margin-bottom:2rem;
+    border-bottom:2px solid #EBF0F5;
+     
+  }
+  
+  .details {
+    font-size: 18px;
+  }
+  
+  img {
+    width: 35.556px;
+height: 47.45px;
+flex-shrink: 0;
+  }
+  
+  /* Lower part styles */
+  .lower {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Space evenly between .box1 elements */
+  }
+  
+  /* .box1 styles */
+  .box1 {
+    margin-bottom: 10px; /* Adds margin at the bottom of each .box1 */
+    display:flex;
+    justify-content:space-between;
+  }
+  
+  /* Add padding and margin within .box1 */
+  .box1 div {
+    margin-bottom: 10px; /* Adds margin below the <div> element */
+  }
+  
+/* Popup.css */
+
+/* Remove increment and decrement arrows for input[type="number"] */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+input {
+
+  cursor: auto; /* Removes the arrow cursor */
+  display: flex;
+width: 157px;
+height: 44px;
+padding: 8px 16px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+flex-shrink: 0;
+
+}
+input{
+    color: #142683;
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; /* 175% */
+letter-spacing: -0.32px;
+}
+
+  /* OK button styles */
+  .save {
+    background-color: #142683;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Cancel button styles */
+  .cancel {
+    background-color: #fff;
+    color:#142683; /* Replaced blue with #0073e6 */
+    border: 2px solid
+  }
+  .bttn{
+      display:flex;
+      flex-direction: row-reverse;
+     /* margin-top:12%; */
+     padding:5rem;
+     
+     
+  }
+  button{
+    display: inline-flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 5px;
+border: 1px solid var(--dark-blue, #142683);
+
+color: #FFF;
+font-family: DM Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; /* 175% */
+letter-spacing: -0.32px;
+  }
+  .cancel{
+      margin:0 3rem;
+  }
