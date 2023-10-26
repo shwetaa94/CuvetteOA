@@ -3,11 +3,12 @@ import { ResponsiveContainer, LineChart, Line, BarChart, Bar, CartesianGrid, XAx
 
 export default function Graph({props}) {
 
-  const[sdata,setdata]=useState(props);
+  
+
   const data = [
     { label: 0,  percentile: 31 },
     { label: 20, percentile: 47 },
-    { label: 40, percentile: sdata },
+    { label: 40, percentile: props },
     { label: 60, percentile: 69 },
     { label: 80, percentile: 22 },
     { label: 100,percentile: 33 },
