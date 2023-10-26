@@ -3,10 +3,9 @@ import Logo from "../components/Logo";
 import Hamburger from "../components/Hamburger";
 import SkillPercentage from "../components/SkillPercentage";
 import Updatebutton from "../components/Updatebutton";
-import GraphCurve from "../components/GraphCurve";
-import PercentCard from "../components/PercentCard";
 import "./SkillResultActiveCase.css";
 import Donut from "../components/Donut";
+import Graph from "../components/Graph";
 import React,{useState} from 'react';
 
 const SkillResultActiveCase = () => {
@@ -79,6 +78,7 @@ const SkillResultActiveCase = () => {
                 Hypertext Markup Language
               </b>
             </div>
+            
             <div className="questions-08">
               Questions: 08 | Duration: 15 mins | Submitted on 5 June 2021
             </div>
@@ -181,9 +181,9 @@ const SkillResultActiveCase = () => {
       </div>
     
       <div className="group-parent3">
-        <GraphCurve />
+        <Graph/>
         <div className="group-wrapper3">
-        <PercentCard />
+        
         </div>
       </div>
 

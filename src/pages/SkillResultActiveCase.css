@@ -106,7 +106,7 @@
   right: 90.54%;
 }
 .hypertext-markup-language {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   letter-spacing: -0.02em;
@@ -116,7 +116,7 @@
 .hypertext-markup-language-wrapper {
   position: absolute;
   height: 43.75%;
-  width: 66.25%;
+  width: 76.25%;
   top: 0;
   right: 33.75%;
   bottom: 56.25%;
