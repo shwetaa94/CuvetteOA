@@ -181,7 +181,7 @@ const SkillResultActiveCase = () => {
       </div>
     
       <div className="group-parent3">
-        <Graph/>
+        <Graph props={main_percentile}/>
         <div className="group-wrapper3">
         
         </div>

@@ -1,8 +1,9 @@
 import React ,{useState}from 'react'
 import { ResponsiveContainer, LineChart, Line, BarChart, Bar, CartesianGrid, XAxis, YAxis, Tooltip, Legend } from 'recharts';
 
-export default function Recharts() {
-  const[sdata,setdata]=useState(37);
+export default function Graph({props}) {
+
+  const[sdata,setdata]=useState(props);
   const data = [
     { label: 0,  percentile: 31 },
     { label: 20, percentile: 47 },
@@ -15,11 +16,11 @@ export default function Recharts() {
   return (
     <div className="row">
       <div className="col-md-12">
-        <h2>Charts with recharts library</h2>
+      
       </div>
 
       <div className="section col-md-6">
-        <h3 className="section-title">Line Chart</h3>
+        
         <div className="section-content">
           <ResponsiveContainer width="60%" height={300}>
             <LineChart data={data} margin={{ top: 15, right: 0, bottom: 15, left: 0 }}>
