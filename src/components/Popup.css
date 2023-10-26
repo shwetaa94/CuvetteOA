@@ -1,6 +1,7 @@
 
 .main {
-    background-color: #fff !important;
+  background-color: #fff !important;
+  
     padding: 2rem 3rem;
     border: 1px solid #142683; /* Replaced blue with #142683 */
     border-radius: 5px;
@@ -11,6 +12,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index:10;
+    /* Popup overlay styles */
+
+
   }
   
   /* Upper part styles */

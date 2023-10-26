@@ -4,9 +4,7 @@ import DonutChart from './DonutChart';
 
 const Donut = ({props}) => {
  
-  var remain=15-{props};
 
-  
   return (
     <>
         <div className="you-scored-7-container">
@@ -21,10 +19,9 @@ const Donut = ({props}) => {
      
       <b className="b6">{props} / 15</b>
       <div className="ellipse-parent2">
-        {/* <div className="group-child7" /> */}
-          <DonutChart my={props} rem={remain}/>
+     
+      <DonutChart my={props} />
       
-        {/* <div className="div4">🎯</div> */}
       </div>
     </>
   )
