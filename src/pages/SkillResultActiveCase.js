@@ -14,16 +14,13 @@ const SkillResultActiveCase = () => {
 
   const[main_score, setmain_score]=useState(2);
   const[main_rank, setmain_rank]=useState(12890);
-
-  // const update_percentile = (new_percentile) => {
-  //   setmain_percentile(new_percentile);
-  // };
-  // const update_score=(new_score)=>{
-  //   setmain_score(new_score);
-  // }
-  // const update_rank=(new_rank)=>{
-  //   setmain_rank(new_rank);
-  // }
+  const handleAppDataUpdate = (newRank, newPercentile, newScore) => {
+    
+      setmain_percentile(newPercentile);
+      setmain_rank(newRank);
+      setmain_score(newScore);
+  };
+ 
   return (
     <div className="skill-result-active-case">
       <div className="skill-result-active-case-child" />
@@ -156,10 +153,8 @@ const SkillResultActiveCase = () => {
       <Updatebutton  
          percentile={main_percentile}
          rank={main_rank}
-         scoree={main_score}
-        //  setmain_percentile={percentile}
-        //  setmain_rank={rank}
-        //  setmain_score={score}
+         score={main_score}
+         onDataUpdate={handleAppDataUpdate}
         
         text="Update"
         variantPrimaryStateActivePadding="4px"

@@ -3,7 +3,7 @@ import "./Updatebutton.css";
 import Popup from './Popup';
 
 const Updatebutton = (
-  { percentile,rank,score,
+  { percentile,rank,score,onDataUpdate,
   text,
   variantPrimaryStateActivePadding,
   variantPrimaryStateActiveCursor,
@@ -37,8 +37,17 @@ const Updatebutton = (
     variantPrimaryStateActiveHeight,
   ]);
  const [upercentile,setupercentile]=useState(percentile);
- const [urank, setudata]=useState(rank);
+ const [urank, seturank]=useState(rank);
  const [uscore,setuscore]=useState(score);
+
+ const [isPopupOpen, setIsPopupOpen] = useState(false);
+//  const [isPopupOpen, setIsPopupOpen] = useState(false);
+ const handleUpdate = (newRank, newPercentile, newScore) => {
+  setupercentile(newRank);
+  seturank(newPercentile);
+  setuscore(newScore);
+  onDataUpdate(newRank, newPercentile, newScore);
+};
   const textStyle = useMemo(() => {
     return {
       display: textDisplay,
@@ -46,21 +55,13 @@ const Updatebutton = (
   }, [textDisplay]);
 
   //poop up details
-  const [isPopupOpen, setIsPopupOpen] = useState(false);
 
-  const openPopup = () => {
-    setIsPopupOpen(true);
-  };
-
-  const closePopup = () => {
-    setIsPopupOpen(false);
-  };
-  //popupd detals
+  
 
   return (
     <>
       <div
-        onClick={openPopup}
+        onClick={() => setIsPopupOpen(true)}
         className="variantprimary-stateactive"
         style={variantPrimaryStateActiveStyle}
       >
@@ -71,7 +72,10 @@ const Updatebutton = (
       <Popup upercentile={upercentile}
              urank={urank}
              uscore={uscore}
-            isOpen={isPopupOpen} onClose={closePopup} />
+            isOpen={isPopupOpen}  
+            onClose={() => setIsPopupOpen(false)}
+            onUpdate={handleUpdate}
+             />
     </>
   );
 };

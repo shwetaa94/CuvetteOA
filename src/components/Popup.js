@@ -2,14 +2,18 @@ import React ,{useState} from 'react';
 import "./Popup.css"
 
 
-const Popup = ({ upercentile, urank, uscore,isOpen, onClose }) => {
+const Popup = ({ upercentile, urank, uscore,isOpen, onClose,onUpdate }) => {
 
     const [rank,setrank]=useState({upercentile});
     const [percentile,setpercentile]=useState({urank});
 
     const [score,setscore]=useState({uscore});
 
-
+    const handleSave = () => {
+        // Call the callback function to update the values in the parent component (Update.js)
+        onUpdate(rank, percentile, score);
+        onClose(); // Close the popup
+      };
 
   return (
   isOpen?(
@@ -47,8 +51,8 @@ const Popup = ({ upercentile, urank, uscore,isOpen, onClose }) => {
      </div>
 
      <div className="bttn">
-         <button onClick={onClose } className="save">Save</button>
-         <button onClick={onClose } className="cancel">Cancel</button>
+     <button onClick={handleSave} className="save">Save</button>
+          <button onClick={onClose} className="cancel">Cancel</button>
      </div>
      </div>
 
